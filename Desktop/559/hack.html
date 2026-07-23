@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Registration</title>
+    <style>
+        /* Centers everything on the page and sets a clean light background */
+        body {
+            font-family: sans-serif;
+            background-color: #f1f5f9; /* Light grey background */
+            color: #000000; /* Default text colour black */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Container styling */
+        .container {
+            background-color: pale pink; /* White card for contrast */
+            max-width: 500px;
+            width: 100%;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        h2 {
+            color: #000000; /* Bold black header */
+            margin-top: 0;
+        }
+
+        .Invite {
+            color: #334155; /* Dark slate for high readability */
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #e2e8f0; /* Light line separator */
+            margin: 20px 0;
+        }
+
+        /* Form input layouts */
+        form {
+            text-align: left;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #000000; /* Black labels */
+            font-size: 14px;
+        }
+
+        /* Input fields, select, and textarea styling */
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="url"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            background-color: #f8fafc; /* Crisp light input background */
+            color: #000000; /* Black input text */
+            font-size: 14px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        /* Highlight input box on click */
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #2563eb; 
+        }
+
+        /* Radio button spacing */
+        .experience {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            padding: 5px 0;
+            color: #000000;
+        }
+
+        .experience input {
+            cursor: pointer;
+        }
+
+        /* Button styling */
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #000000; /* Elegant black button */
+            color: #ffffff; /* White button text */
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #1e293b; /* Dark grey hover state */
+        }
+
+        /* Footer elements */
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .footer h3 {
+            font-size: 14px;
+            color: #334155; /* Dark grey for details */
+            margin: 8px 0;
+            font-weight: normal;
+        }
+
+        .register {
+            color: #000000; /* Black accent heading */
+            font-size: 20px;
+            letter-spacing: 2px;
+            margin: 20px 0 10px 0;
+        }
+
+        .welcome {
+            color: #16a34a; /* Classic green welcome accent */
+            font-size: 16px;
+            margin: 0;
+        }
+     </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Hackathon 2026 Registration</h2>
+
+        <p class="Invite">
+            Ready to build the future? Register now for the <b>Global Tech Hackathon</b>. 
+            Showcase your skills, collaborate with brilliant minds, and win exciting prizes!
+        </p>
+
+        <hr>
+
+        <form>
+            <!-- Full Name -->
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" placeholder= >
+            </div>
+
+            <!-- Email Address -->
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" placeholder= >
+            </div>
+
+            <!-- Phone Number -->
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder= >
+            </div>
+
+            <!-- GitHub / Portfolio Link -->
+            <div class="form-group">
+                <label>GitHub / linkedin URL</label>
+                <input type="url" placeholder= >
+            </div>
+
+            <!-- Skill Level -->
+            <div class="form-group">
+                <label>Experience Level</label>
+                <div class="experience">
+                    <label><input type="radio" name="level" value="beginner"> Beginner</label>
+                    <label><input type="radio" name="level" value="intermediate"> Intermediate</label>
+                    <label><input type="radio" name="level" value="expert"> Expert</label>
+                </div>
+            </div>
+
+            <!-- Preferred Track -->
+            <div class="form-group">
+                <label>Preferred Hackathon Track</label>
+                <select required>
+                    <option value="" disabled selected>Select a track</option>
+                    <option value="ai-ml">Artificial Intelligence</option>
+                    <option value="web-dev">Web Development</option>
+                    <option value="cybersec">Cybersecurity </option>
+                </select>
+            </div>
+            <!-- Submit Button -->
+            <button type="submit">Register for Hackathon</button>
+        </form>
+
+        <div class="footer">
+            <h3>Date: Friday - Sunday, 21-23 August 2026</h3>
+            <h3>Time: 09:00 AM onwards</h3>
+            <h3>Venue: Bhojreddy Engineering college, Saidabad</h3>
+            <h2 class="register">REGISTER NOW</h2>
+            <h2 class="welcome">ALL CODERS ARE WELCOME</h2>
+        </div>
+    </div>
+
+</body>
+</html>
